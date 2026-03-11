@@ -31,9 +31,12 @@ export const companyInfo = {
   email: 'info@civion.com',
 
   // ── Images (fetch from GET /api/site-settings when backend is ready) ──
-  heroBgImage: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80',
-  // Confident engineer: hard hat, smiling, holding architectural blueprints
-  heroWorkerImage: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80',
+  // Building under construction — concrete columns, rebar, scaffolding, workers, blue sky
+  // TO USE YOUR OWN IMAGE: save the file as frontend/public/hero-bg.jpg
+  // then change this line to: heroBgImage: '/hero-bg.jpg'
+  heroBgImage: '/hero-bg.jpg',
+  // Construction worker: yellow hard hat, orange safety vest, arms crossed, confident
+  heroWorkerImage: '/nextheader.jpg',
 }
 
 // ── Team members (featured 5 shown in hero avatars) ──────────

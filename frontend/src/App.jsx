@@ -4,6 +4,13 @@ import { Toaster } from 'react-hot-toast'
 
 import Layout from './components/layout/Layout'
 
+// Admin
+import AdminLayout    from './pages/admin/AdminLayout'
+import AdminDashboard from './pages/admin/AdminDashboard'
+import AdminProjects  from './pages/admin/AdminProjects'
+import AdminExpenses  from './pages/admin/AdminExpenses'
+import AdminSettings  from './pages/admin/AdminSettings'
+
 // Pages
 import Home         from './pages/Home'
 import About        from './pages/About'
@@ -93,6 +100,14 @@ export default function App() {
 
           {/* ── Auth ── */}
           <Route path="/login" element={<Layout><Login /></Layout>} />
+
+          {/* ── Admin Dashboard ── */}
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route index                element={<AdminDashboard />} />
+            <Route path="projects"      element={<AdminProjects />} />
+            <Route path="expenses"      element={<AdminExpenses />} />
+            <Route path="settings"      element={<AdminSettings />} />
+          </Route>
 
           {/* ── 404 — must be last ── */}
           <Route path="*" element={<Layout><NotFound /></Layout>} />

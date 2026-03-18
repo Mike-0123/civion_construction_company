@@ -1,6 +1,7 @@
 import Navbar from './Navbar'
 import Footer from './Footer'
 import TopBar from './TopBar'
+import WhatsAppButton from './WhatsAppButton'
 
 // ── Layout ────────────────────────────────────────────────────
 // TopBar is ALWAYS rendered — it is fixed (z-50, h-10 = 40px).
@@ -22,6 +23,7 @@ export default function Layout({ children, bare = false }) {
         <TopBar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <WhatsAppButton />
       </div>
     )
   }
@@ -37,6 +39,7 @@ export default function Layout({ children, bare = false }) {
         {children}
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   )
 }

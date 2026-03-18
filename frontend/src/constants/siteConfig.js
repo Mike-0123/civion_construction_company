@@ -29,6 +29,9 @@ export const companyInfo = {
   phone: '+(250) 788 208 488',
   address: 'KG 14 Ave, Kigali-Gisozi, Rwanda',
   email: 'info@civion.com',
+  // ── WhatsApp click-to-chat number (international format, no + or spaces) ──
+  // TO CHANGE: update the digits below — country code + number
+  whatsapp: '250788208488',
 
   // ── Images (fetch from GET /api/site-settings when backend is ready) ──
   // Building under construction — concrete columns, rebar, scaffolding, workers, blue sky

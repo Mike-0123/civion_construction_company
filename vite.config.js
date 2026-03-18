@@ -14,4 +14,7 @@ export default defineConfig({
       '/api': 'http://localhost:5000', // backend will run on 5000
     },
   },
+  preview: {
+    port: 3000,
+  },
 })

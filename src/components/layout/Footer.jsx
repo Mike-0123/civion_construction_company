@@ -162,6 +162,21 @@ export default function Footer() {
             ))}
           </div>
         </div>
+
+        {/* Built by credit */}
+        <div className="mt-6 pt-4 border-t border-white/5 text-center">
+          <p className="text-xs text-gray-600">
+            Designed & built by{' '}
+            <a
+              href="https://discounts.rw/rwadiscountstech"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-orange-500 hover:text-orange-400 transition-colors font-medium"
+            >
+              RwaDiscountsTech
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   )
